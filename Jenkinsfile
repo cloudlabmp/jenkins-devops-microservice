@@ -43,7 +43,6 @@ pipeline {
 			}
 		}
 
-
 		stage('Build Docker Image') {
 			steps {
 				script {
@@ -61,6 +60,7 @@ pipeline {
 					}
 				}
 			}
+			}
 		}
 
 	post {
@@ -74,7 +74,4 @@ pipeline {
 			echo 'I run when you fail'
 		}
 	}
-}
-
-
 }
